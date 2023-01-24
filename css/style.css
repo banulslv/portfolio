@@ -1,0 +1,230 @@
+
+img{
+  width: 100%;
+  height: auto;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: justify;
+  }
+  header {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    top: 0;
+  }
+ 
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 10px;
+  }
+  
+  section {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+    section :any-link {
+        text-decoration:none;
+        color: #000000;
+        font-weight: bold;
+    }
+  #sobremi h2{
+    padding-top: 5%;
+    text-align: center;
+    background: #f4f4f4;
+  }
+  #sobremi p{
+    width: 75%;
+    margin-top: 3%;
+    margin-right: 3%;
+  }
+  #container_img{
+    width: 25%;
+  }
+  #container_img img{
+    border-radius: 50%;
+  }
+  #projectos {
+    padding-top: 2%;
+    text-align: center;
+    background: #fff;
+  }
+  
+  #services {
+    background: #f4f4f4;
+  }
+  #services h2{
+    text-align: center;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  #services h3{
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  #services p{
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  #contacto h2{
+    text-align: center;
+  }
+  
+  .about-container  {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  .about-container #container_img {
+    width: 15%;
+    margin-right: 20px;
+    border-radius: 50%;
+  
+  }
+  
+  .project-container {
+    display: flex;
+    border: 1px black;
+    
+  }
+    .project1 {
+      text-align: center;
+      width: 100%;
+      height: 100px;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      transform: scale(1);
+      transition: transform 0.5s ease;
+      
+    }
+      .project1:hover{
+        transform: scale(1.25);
+      
+      }
+      .project1 a:hover{
+        color: rgb(60, 60, 238);
+      }
+
+    .project2 {
+      text-align: center;
+      width: 100%;
+      height: 100px;
+      transform: scale(1);
+      transition: transform 0.5s ease;
+      
+    }
+      .project2:hover{
+        transform: scale(1.25);
+      
+      }
+      .project2 a:hover{
+        color: rgb(60, 60, 238);
+      }
+  footer{
+    background-color:#e4e3e3;
+    width: 100%;
+    
+  }
+    footer h2{
+      text-align: center;
+    }
+    .copyright{
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 2%;
+    }
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+  header nav a {
+    margin-right: 10px;
+    padding: 2px;
+  }
+  #sobremi h2 {
+    font-size: 1.2em;
+  }
+  #sobremi{
+    flex-direction: column;
+  }
+  #projectos h2 {
+    font-size: 1.2em;
+  }
+  #services h2 {
+    font-size: 1.2em;
+  }
+
+  .about-container img {
+    flex-direction: column;
+    margin-right: 3%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .about-container  {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  #sobremi p {
+    font-size: 1em;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 95%;
+  .project1 {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    transform: scale(0.85);
+    transition: transform 0.5s ease;
+  }
+  .project1:hover{
+    transform: scale(1);
+  
+  }
+  .project1 a:hover{
+    color: rgb(60, 60, 238);
+  }
+
+.project2 {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  transform: scale(0.85);
+  transition: transform 0.5s ease;
+  
+}
+  .project2:hover{
+    transform: scale(1);
+  
+  }
+  .project2 a:hover{
+    color: rgb(60, 60, 238);
+}
+
+/* Estilos para tabletas */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  header {
+    padding: 15px;
+  }
+    .about-container img {
+      width: 30%;
+      margin-right: 5px;
+      border-radius: 50%;
+    }
+}
